@@ -5,27 +5,53 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src --max-warnings=0",
+    "prepare": "husky install"
+  },
+  "lint-staged":{
+    "src/**/*": [
+        "yanr lint --fix"
+    ]
   },
   "dependencies": {
+    "@expo-google-fonts/salsa": "^0.1.0",
     "expo": "~41.0.1",
-    "expo-updates": "~0.5.4",
+    "expo-app-loading": "^1.0.3",
+    "expo-cli": "^4.5.2",
+    "expo-font": "~9.1.0",
     "expo-splash-screen": "~0.10.2",
+    "expo-updates": "~0.5.4",
+    "global": "^4.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "~0.63.4",
     "react-native-gesture-handler": "~1.10.2",
     "react-native-reanimated": "~2.1.0",
     "react-native-screens": "~3.0.0",
+    "react-native-size-matters": "^0.4.0",
+    "react-native-svg-transformer": "^0.14.3",
     "react-native-unimodules": "~0.13.3",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.13.12",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
+    "@types/styled-components-react-native": "^5.1.1",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
     "babel-preset-expo": "~8.3.0",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
     "jest-expo": "~41.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "2.3.1",
     "typescript": "~4.0.0"
   },
   "jest": {
