@@ -5,14 +5,7 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint src --max-warnings=0",
-    "prepare": "husky install"
-  },
-  "lint-staged":{
-    "src/**/*": [
-        "yanr lint --fix"
-    ]
+    "test": "jest"
   },
   "dependencies": {
     "@expo-google-fonts/salsa": "^0.1.0",
@@ -42,13 +35,13 @@
     "@types/styled-components-react-native": "^5.1.1",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "@typescript-eslint/parser": "^4.27.0",
+    "babel-loader": "^8.2.2",
     "babel-preset-expo": "~8.3.0",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^6.0.0",
     "jest-expo": "~41.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "2.3.1",

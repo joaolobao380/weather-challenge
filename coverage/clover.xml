@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1624302640683" clover="3.2.0">
+  <project timestamp="1624302640683" name="All files">
+    <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0" elements="8" coveredelements="0" complexity="0" loc="6" ncloc="6" packages="1" files="2" classes="2"/>
+    <file name="index.js" path="/Users/joaovictorlobao/weather-challenge/index.js">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="9" count="0" type="stmt"/>
+    </file>
+    <file name="metro.config.js" path="/Users/joaovictorlobao/weather-challenge/metro.config.js">
+      <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <line num="2" count="0" type="stmt"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
