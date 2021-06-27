@@ -88,18 +88,3 @@ export const ContainerLastUpdate = styled.View`
     align-items: center;
     margin-top: ${verticalScale(8)}px;
 `;
-
-export const LastUpdateText = styled.Text`
-    font-family: ${({ theme }) => theme.fonts.regular};
-    font-size: ${verticalScale(16)}px;
-
-    color: ${({ theme }) => theme.colors.white};
-`;
-
-export const LastUpdated = styled.Text`
-    font-family: ${({ theme }) => theme.fonts.regular};
-    font-size: ${verticalScale(16)}px;
-    margin-left: ${verticalScale(4)}px;
-
-    color: ${({ theme }) => theme.colors.white};
-`;

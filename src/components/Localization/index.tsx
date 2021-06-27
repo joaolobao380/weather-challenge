@@ -4,7 +4,7 @@ import * as S from './styles';
 
 export function Localization() {
     const { currentWeather } = useWeather();
-    console.log(currentWeather);
+
     return (
         <S.Container>
             <S.LocalizationIcon

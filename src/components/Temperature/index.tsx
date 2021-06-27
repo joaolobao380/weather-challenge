@@ -12,7 +12,11 @@ export function Temperature() {
                     ? `${currentWeather.list[0].main.temp.toFixed()}º`
                     : '00º'}
             </S.TemperatureNumber>
-            <S.TemperatureDescription>Cloudy</S.TemperatureDescription>
+            <S.TemperatureDescription>
+                {currentWeather.length !== 0
+                    ? `${currentWeather.list[0].weather[0].main}`
+                    : 'Clou'}
+            </S.TemperatureDescription>
         </S.Container>
     );
 }
