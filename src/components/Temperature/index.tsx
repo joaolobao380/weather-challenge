@@ -1,9 +1,9 @@
 import React from 'react';
-import useWeather from '../../hooks/useWeather';
+import useWeatherAndLocation from '../../hooks/useWeatherAndLocation';
 import * as S from './styles';
 
 export function Temperature() {
-    const { currentWeather } = useWeather();
+    const { currentWeather } = useWeatherAndLocation();
 
     return (
         <S.Container>

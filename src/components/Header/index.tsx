@@ -1,12 +1,12 @@
 import React from 'react';
 import { TouchableOpacity, ActivityIndicator } from 'react-native';
 import { format } from 'date-fns';
-import useWeather from '../../hooks/useWeather';
+import useWeatherAndLocation from '../../hooks/useWeatherAndLocation';
 
 import * as S from './styles';
 
 export function Header() {
-    const { getCurrentWeather, isLoading } = useWeather();
+    const { getCurrentWeather, isLoading } = useWeatherAndLocation();
 
     return (
         <S.Container>

@@ -8,7 +8,7 @@ interface IWeatherCurrent {
     isLoading: boolean;
 }
 
-export default function useWeather(): IWeatherCurrent {
+export default function useWeatherAndLocation(): IWeatherCurrent {
     const [currentWeather, setCurrentWeather] = React.useState([]);
     const [isLoading, setIsLoading] = React.useState(false);
 
