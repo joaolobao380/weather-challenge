@@ -1,53 +1,56 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { fetchCurrentWeather } from '../services';
 import * as Location from 'expo-location';
-import useLocationCurrent from './useLocationCurrent';
-import GetLocation from 'react-native-get-location';
-
-import Geolocation from '@react-native-community/geolocation';
 
 interface IWeatherCurrent {
-    currentWeather?: any | null;
-    getWeather(): any;
-    getPosition(): any;
+    currentWeather?: any;
 }
 
 export default function useWeather(): IWeatherCurrent {
     const [currentWeather, setCurrentWeather] = React.useState([]);
-    const [lat, setLat] = React.useState(-1);
-    const [long, setLong] = React.useState(-1);
+    const [lat, setLat] = React.useState(0);
+    const [long, setLong] = React.useState(0);
 
-    React.useEffect(() => {
-        getPosition();
-        console.log('2');
+    useEffect(() => {
+        (async () => {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve('2 seconds');
+                }, 2000);
+                getWeather();
+            });
+
+            console.log('1');
+        })();
     }, []);
 
-    React.useEffect(() => {
-        getWeather();
-    }, [getWeather]);
+    async function getPosition() {
+        const { status } = await Location.requestForegroundPermissionsAsync();
+        if (status !== 'granted') {
+            alert('Permission to access location was denied');
+            return;
+        }
 
-    function getPosition() {
-        Geolocation.getCurrentPosition(
-            (position) => {
-                // const initialPosition = JSON.stringify(position);
-                setLat(position.coords.latitude);
-                setLong(position.coords.longitude);
-                console.log('1', position.coords.latitude);
-            },
-            (error) => alert('Error', JSON.stringify(error)),
-            { enableHighAccuracy: true, timeout: 5000, maximumAge: 10000 }
-        );
+        const location = await Location.getCurrentPositionAsync({});
+        setLong(location.coords.longitude);
+        setLat(location.coords.latitude);
+        // eslint-disable-next-line no-extra-boolean-cast
     }
+    // let text = 'Waiting..';
+    // if (errorMsg) {
+    //     text = errorMsg;
+    // } else if (location) {
+    //     text = JSON.stringify(location);
+    // }
 
     async function getWeather() {
         const weatherResponseAPI = await fetchCurrentWeather(lat, long);
-
+        console.log('Result', weatherResponseAPI);
         setCurrentWeather(weatherResponseAPI);
     }
 
     return {
         currentWeather,
-        getWeather,
-        getPosition,
+        // getWeather,
     };
 }
