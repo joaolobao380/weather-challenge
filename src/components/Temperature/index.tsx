@@ -4,15 +4,13 @@ import * as S from './styles';
 
 export function Temperature() {
     const { currentWeather } = useWeather();
-    console.log('CurrentWeather', currentWeather);
-    // console.log(
-    //     currentWeather !== undefined ? currentWeather.list[0].main.temp : null
-    // );
+
     return (
         <S.Container>
             <S.TemperatureNumber>
-                {/* eslint-disable-next-line no-extra-boolean-cast */}
-                {!!currentWeather ? currentWeather : '00'}
+                {currentWeather.length !== 0
+                    ? `${currentWeather.list[0].main.temp.toFixed()}º`
+                    : '00º'}
             </S.TemperatureNumber>
             <S.TemperatureDescription>Cloudy</S.TemperatureDescription>
         </S.Container>

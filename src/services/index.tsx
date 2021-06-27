@@ -7,6 +7,7 @@ export function fetchCurrentWeather(lat: number, long: number) {
             `http://api.openweathermap.org/data/2.5/find?lat=${lat}&lon=${long}&units=metric&APPID=8f90758f04cf3ea25f956af3a763918c`
         )
         .then((response) => {
+            console.log('response', response.data);
             return response.data;
         })
         .catch((err) => console.log(err));

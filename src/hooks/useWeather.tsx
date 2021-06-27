@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { fetchCurrentWeather } from '../services';
 import * as Location from 'expo-location';
+import axios from 'axios';
 
 interface IWeatherCurrent {
     currentWeather?: any;
@@ -8,23 +8,12 @@ interface IWeatherCurrent {
 
 export default function useWeather(): IWeatherCurrent {
     const [currentWeather, setCurrentWeather] = React.useState([]);
-    const [lat, setLat] = React.useState(0);
-    const [long, setLong] = React.useState(0);
 
     useEffect(() => {
-        (async () => {
-            return new Promise((resolve) => {
-                setTimeout(() => {
-                    resolve('2 seconds');
-                }, 2000);
-                getWeather();
-            });
-
-            console.log('1');
-        })();
+        getCurrentWeather();
     }, []);
 
-    async function getPosition() {
+    async function getCurrentWeather() {
         const { status } = await Location.requestForegroundPermissionsAsync();
         if (status !== 'granted') {
             alert('Permission to access location was denied');
@@ -32,25 +21,18 @@ export default function useWeather(): IWeatherCurrent {
         }
 
         const location = await Location.getCurrentPositionAsync({});
-        setLong(location.coords.longitude);
-        setLat(location.coords.latitude);
-        // eslint-disable-next-line no-extra-boolean-cast
-    }
-    // let text = 'Waiting..';
-    // if (errorMsg) {
-    //     text = errorMsg;
-    // } else if (location) {
-    //     text = JSON.stringify(location);
-    // }
 
-    async function getWeather() {
-        const weatherResponseAPI = await fetchCurrentWeather(lat, long);
-        console.log('Result', weatherResponseAPI);
-        setCurrentWeather(weatherResponseAPI);
+        axios
+            .get(
+                `http://api.openweathermap.org/data/2.5/find?lat=${location.coords.latitude}&lon=${location.coords.longitude}&units=metric&APPID=8f90758f04cf3ea25f956af3a763918c`
+            )
+            .then((response) => {
+                setCurrentWeather(response.data);
+            })
+            .catch((err) => console.log(err));
     }
 
     return {
         currentWeather,
-        // getWeather,
     };
 }
