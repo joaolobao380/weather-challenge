@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Go Stack logo" src="https://github.com/joaolobao380/weather-challenge/blob/assets/LogoBlue.svg" />
+    <img alt="Weather logo" src="https://github.com/joaolobao380/weather-challenge/blob/assets/LogoBlue.svg" />
     <br>
     Welcome
 </h1>
@@ -8,8 +8,15 @@
 </h3>
 
 <h1 align="center">
-    <img alt="Proffy" src="https://github.com/joaolobao380/weather-challenge/blob/assets/screencap-2021-06-28T035613.767Z.gif" width="800px" />
+    <img alt="Proffy" src="https://github.com/joaolobao380/weather-challenge/blob/assets/screencap-2021-06-28T035613.767Z.gif" width="200px" />
 </h1>
+
+
+![Supports Android, iOS](https://github.com/joaolobao380/weather-challenge/blob/assets/Platforms.svg) ![MIT License](https://img.shields.io/npm/l/@react-native-picker/picker.svg) [![Lean Core Extracted](https://img.shields.io/badge/Lean%20Core-Extracted-brightgreen.svg)](https://github.com/facebook/react-native/issues/23313)
+
+| Android | iOS | PickerIOS | Windows | MacOS |
+| --- | --- | --- | --- | --- |
+| <img src="./screenshots/picker-android.png" width="150"> | <img src="./screenshots/picker-ios.png" width="150"> | <img src="./screenshots/pickerios-ios.png" width="150"> | <img src="./screenshots/picker-windows.png" width="300"> | <img src="./screenshots/picker-macos.png" width="300">
 
 ## :rocket: FRONT-END
 -   <img src="https://cdn.worldvectorlogo.com/logos/react.svg" width="20px" height="15px">[ReactJS](https://reactjs.org/)
