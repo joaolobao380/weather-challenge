@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import { verticalScale } from 'react-native-size-matters';
+import { ITimeOfDay } from '../../types';
 
 export const Container = styled.View`
     flex-direction: row;
@@ -19,19 +20,21 @@ export const ContentHumidity = styled.View`
 `;
 export const HumidityImage = styled.Image``;
 
-export const HumidityText = styled.Text`
+export const HumidityText = styled.Text<ITimeOfDay>`
     font-family: ${({ theme }) => theme.fonts.regular};
     font-size: ${verticalScale(16)}px;
     margin-left: ${verticalScale(4)}px;
 
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme, isLight }) =>
+        !isLight ? theme.colors.white : theme.colors.pupleDefault};
 `;
 
-export const HumidityNumber = styled.Text`
+export const HumidityNumber = styled.Text<ITimeOfDay>`
     font-family: ${({ theme }) => theme.fonts.regular};
     font-size: ${verticalScale(32)}px;
 
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme, isLight }) =>
+        !isLight ? theme.colors.white : theme.colors.pupleDefault};
 `;
 
 export const ContainerFeelsLike = styled.View`
@@ -43,19 +46,21 @@ export const ContentFeelsLike = styled.View`
 `;
 export const FeelsLikeImage = styled.Image``;
 
-export const FeelsLikeText = styled.Text`
+export const FeelsLikeText = styled.Text<ITimeOfDay>`
     font-family: ${({ theme }) => theme.fonts.regular};
     font-size: ${verticalScale(16)}px;
     margin-left: ${verticalScale(4)}px;
 
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme, isLight }) =>
+        !isLight ? theme.colors.white : theme.colors.pupleDefault};
 `;
 
-export const FeelsLikeNumber = styled.Text`
+export const FeelsLikeNumber = styled.Text<ITimeOfDay>`
     font-family: ${({ theme }) => theme.fonts.regular};
     font-size: ${verticalScale(32)}px;
 
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme, isLight }) =>
+        !isLight ? theme.colors.white : theme.colors.pupleDefault};
 `;
 
 export const ContainerVelocity = styled.View`
@@ -68,19 +73,21 @@ export const ContentVelocity = styled.View`
 `;
 export const VelocityImage = styled.Image``;
 
-export const VelocityText = styled.Text`
+export const VelocityText = styled.Text<ITimeOfDay>`
     font-family: ${({ theme }) => theme.fonts.regular};
     font-size: ${verticalScale(16)}px;
     margin-left: ${verticalScale(4)}px;
 
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme, isLight }) =>
+        !isLight ? theme.colors.white : theme.colors.pupleDefault};
 `;
 
-export const VelocityNumber = styled.Text`
+export const VelocityNumber = styled.Text<ITimeOfDay>`
     font-family: ${({ theme }) => theme.fonts.regular};
     font-size: ${verticalScale(32)}px;
 
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme, isLight }) =>
+        !isLight ? theme.colors.white : theme.colors.pupleDefault};
 `;
 
 export const ContainerLastUpdate = styled.View`

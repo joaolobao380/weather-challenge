@@ -1,12 +1,15 @@
 import styled from 'styled-components/native';
 import { verticalScale } from 'react-native-size-matters';
 
-export const Container = styled.View`
+import { ITimeOfDay } from '../../types';
+
+export const Container = styled.View<ITimeOfDay>`
     flex: 1;
     justify-content: center;
     align-items: center;
 
-    background-color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme, isLight }) =>
+        !isLight ? theme.colors.white : theme.colors.pupleDefault};
 `;
 
 export const ContainerMoreInformation = styled.View`
