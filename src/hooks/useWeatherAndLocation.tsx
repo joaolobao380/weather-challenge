@@ -4,6 +4,7 @@ import * as Location from 'expo-location';
 import { IWeatherCurrent } from '../types';
 
 import axios from 'axios';
+import { api_key_openweaher } from '../security';
 
 export default function useWeatherAndLocation(): IWeatherCurrent {
     const [currentWeather, setCurrentWeather] = React.useState([]);
@@ -26,7 +27,7 @@ export default function useWeatherAndLocation(): IWeatherCurrent {
 
         axios
             .get(
-                `http://api.openweathermap.org/data/2.5/find?lat=${location.coords.latitude}&lon=${location.coords.longitude}&units=metric&APPID=8f90758f04cf3ea25f956af3a763918c`
+                `http://api.openweathermap.org/data/2.5/find?lat=${location.coords.latitude}&lon=${location.coords.longitude}&units=metric&APPID=${api_key_openweaher}`
             )
             .then((response) => {
                 setIsLoading(false);
