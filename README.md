@@ -1,34 +1,51 @@
 <h1 align="center">
     <img alt="Weather logo" src="https://github.com/joaolobao380/weather-challenge/blob/assets/LogoBlue.svg" />
     <br>
-    Welcome
+     Welcome
 </h1>
+
+<p align="center">
+    <img src="https://github.com/joaolobao380/weather-challenge/blob/assets/Platforms.svg" alt="Working in platform ios and android" />
+    <img src="https://img.shields.io/npm/l/@react-native-picker/picker.svg" alt="Follow @reactnative" />
+</p>
+
+
+
 <h3 align="center">
   App Weather
 </h3>
 
+
+
+
 <h1 align="center">
     <img alt="Proffy" src="https://github.com/joaolobao380/weather-challenge/blob/assets/screencap-2021-06-28T035613.767Z.gif" width="200px" />
+     <img alt="Proffy" src="https://github.com/joaolobao380/weather-challenge/blob/assets/screencap-2021-06-28T035803.224Z.gif" width="200px" />
 </h1>
 
+## DESCRIPTION
 
-![Supports Android, iOS](https://github.com/joaolobao380/weather-challenge/blob/assets/Platforms.svg) ![MIT License](https://img.shields.io/npm/l/@react-native-picker/picker.svg) [![Lean Core Extracted](https://img.shields.io/badge/Lean%20Core-Extracted-brightgreen.svg)](https://github.com/facebook/react-native/issues/23313)
+  The app weather will be able to idenfy whether it's night or day, and from that change the interface, in addition to recording the temperature, humidity, feel like and speed. Want to know more, take a look at figma: 
+    
+    https://www.figma.com/file/PpOlg2lmO2zgBdWHjVO2EZ/DESAFIO-PLATFORM-BUILDERS?node-id=0%3A1
+   
 
-| Android | iOS | PickerIOS | Windows | MacOS |
-| --- | --- | --- | --- | --- |
-| <img src="./screenshots/picker-android.png" width="150"> | <img src="./screenshots/picker-ios.png" width="150"> | <img src="./screenshots/pickerios-ios.png" width="150"> | <img src="./screenshots/picker-windows.png" width="300"> | <img src="./screenshots/picker-macos.png" width="300">
 
 ## :rocket: FRONT-END
--   <img src="https://cdn.worldvectorlogo.com/logos/react.svg" width="20px" height="15px">[ReactJS](https://reactjs.org/)
--   <img src="https://breitembach.github.io/assets/icons/css.png" width="20px" height="17px">[CSS3](https://www.w3.org/Style/CSS/Overview.en.html)
--   <img src="https://img1.gratispng.com/20180809/rok/kisspng-javascript-and-jquery-interactive-front-end-web-d--5b6cfa25cf8a30.0077362015338685818501.jpg"                 width="20px" height="15px">[JavaScript](https://www.typescriptlang.org/)
--   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWMKVBJ_CZ61ofL_QC6KgtbZj9zYrJPrSyCw&usqp=CAU" width="20px" height="20px">[TypeScript](https://www.typescriptlang.org/)
+-   <img src="https://reactnative.dev/img/header_logo.svg" width="20px" height="15px">[React Native](https://reactnative.dev/)
+-   <img src="https://styled-components.com/logo.png" width="20px" height="17px">[Styled Components](https://github.com/styled-components/styled-components)
+-   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png" width="20px" height="20px">[TypeScript](https://www.typescriptlang.org/)
+-   <img src="https://prettier.io/icon.png" width="20px" height="15px">[Prettier](https://prettier.io/)
 -   [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
+-   React Hooks
 
-## :rocket: BACK-END
--   <img src="https://walde.co/wp-content/uploads/2016/09/nodejs_logo.png" width="20px" height="15px"> [NodeJS](https://nodejs.org/en/)
--   [Express](https://expressjs.com/pt-br/)
--   [VS Code] with[ESLint]
+##  BACK-END
+-   <img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" width="20px" height="15px"> [openweathermap](https://openweathermap.org/)
+
+
+##  UI
+-   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/400px-Figma-logo.svg.png" width="10px" height="15px"> [Figma](https://www.figma.com/file/PpOlg2lmO2zgBdWHjVO2EZ/DESAFIO-PLATFORM-BUILDERS?node-id=0%3A1)
+
 
 
 
