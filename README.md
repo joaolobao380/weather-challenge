@@ -82,7 +82,10 @@ $ yarn expo - expo
 ## Install Back
   https://openweathermap.org/ you will create a record and get the api key
     
-    cd weather-challenge/security/index.tsx
+    cd weather-challenge/src/security/index.tsx
+    
+    export const api_key_openweaher = '<API_KEY>';
+    
   you will paste your key api
     
 
