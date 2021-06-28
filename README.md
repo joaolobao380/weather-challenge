@@ -1,14 +1,14 @@
 <h1 align="center">
     <img alt="Go Stack logo" src="https://github.com/joaolobao380/weather-challenge/blob/assets/LogoBlue.svg" />
     <br>
-    Proffy
+    Welcome
 </h1>
 <h3 align="center">
-  App proffy [RocketSeat Next Level Week #2](https://nextlevelweek.com/inscricao/2)
+  App Weather
 </h3>
 
 <h1 align="center">
-    <img alt="Proffy" src="https://raw.githubusercontent.com/joaolobao380/Proffy/assets/Proffy-gif.gif" width="800px" />
+    <img alt="Proffy" src="https://github.com/joaolobao380/weather-challenge/blob/assets/screencap-2021-06-28T035613.767Z.gif" width="800px" />
 </h1>
 
 ## :rocket: FRONT-END
