@@ -1,12 +1,9 @@
-import { format } from 'date-fns';
 import React from 'react';
+import { format } from 'date-fns';
 
-interface ITimeOfDay {
-    isLight: boolean;
-    decidedTimeOfDay(): void;
-}
+import { ITimeOfDayHooks } from '../types';
 
-export default function useTimeOfDay(): ITimeOfDay {
+export default function useTimeOfDay(): ITimeOfDayHooks {
     const [isLight, setIsLight] = React.useState(false);
 
     React.useEffect(() => {

@@ -1,12 +1,9 @@
 import React, { useEffect } from 'react';
 import * as Location from 'expo-location';
-import axios from 'axios';
 
-interface IWeatherCurrent {
-    currentWeather?: any;
-    getCurrentWeather(): void;
-    isLoading: boolean;
-}
+import { IWeatherCurrent } from '../types';
+
+import axios from 'axios';
 
 export default function useWeatherAndLocation(): IWeatherCurrent {
     const [currentWeather, setCurrentWeather] = React.useState([]);

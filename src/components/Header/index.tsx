@@ -1,7 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, ActivityIndicator } from 'react-native';
-
 import { format } from 'date-fns';
+
 import useWeatherAndLocation from '../../hooks/useWeatherAndLocation';
 import useTimeOfDay from '../../hooks/useTimeOfDay';
 
