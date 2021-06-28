@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Go Stack logo" src="https://github.com/joaolobao380/Proffy/blob/assets/nlw.svg" />
+    <img alt="Go Stack logo" src="https://github.com/joaolobao380/weather-challenge/blob/assets/LogoBlue.svg" />
     <br>
     Proffy
 </h1>
