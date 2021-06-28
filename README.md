@@ -23,7 +23,7 @@
      <img alt="Proffy" src="https://github.com/joaolobao380/weather-challenge/blob/assets/screencap-2021-06-28T035803.224Z.gif" width="200px" />
 </h1>
 
-## DESCRIPTION
+## Description
 
   The app weather will be able to idenfy whether it's night or day, and from that change the interface, in addition to recording the temperature, humidity, feel like and speed. Want to know more, take a look at figma: 
     
@@ -31,7 +31,7 @@
    
 
 
-## :rocket: FRONT-END
+## :rocket: Front-end
 -   <img src="https://reactnative.dev/img/header_logo.svg" width="20px" height="15px">[React Native](https://reactnative.dev/)
 -   <img src="https://styled-components.com/logo.png" width="20px" height="17px">[Styled Components](https://github.com/styled-components/styled-components)
 -   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png" width="20px" height="20px">[TypeScript](https://www.typescriptlang.org/)
@@ -39,7 +39,7 @@
 -   [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 -   React Hooks
 
-##  BACK-END
+##  Back-end
 -   <img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" width="20px" height="15px"> [openweathermap](https://openweathermap.org/)
 
 
@@ -52,7 +52,7 @@
 ### Clone repository
 ```bash
 # Clone this repository
-$ git clone https://github.com/joaolobao380/Proffy.git
+$ git https://github.com/joaolobao380/weather-challenge.git
 ```
 
 
@@ -60,33 +60,31 @@ $ git clone https://github.com/joaolobao380/Proffy.git
 ```bash
 
 # Go into the web path
-$ cd Proffy/web
-
+$ cd weather-challenge
+```
+```bash
 # Install dependencies
 $ yarn install
-
-# Run the Front
-$ yarn start
 ```
-
-### Install Back
 ```bash
-
-# Go into the server path
-$ cd Proffy/server
-
-# Install dependencies
-$ yarn install
-
-# Run the Front
-$ yarn start
+# Run the Front Android emulator or phisycal
+$ yarn android
 ```
-### Run Migrate
 ```bash
-
-# Run migrate
-$ yarn knex:migrate
+# Run the Front Ios emulator or phisycal
+$ yarn ios
 ```
+```bash
+# Run the Front Expo
+$ yarn expo - expo
+```
+
+## Install Back
+  https://openweathermap.org/ you will create a record and get the api key
+    
+    cd weather-challenge/security/index.tsx
+  you will paste your key api
+    
 
 ## :memo: License
 
